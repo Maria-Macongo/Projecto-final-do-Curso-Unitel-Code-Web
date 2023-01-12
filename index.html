@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/icons-lightning-bolt-32.png" type="image/x-icon">
+    <title>ENDE</title>
+</head>
+<body>
+    <!--Menu-->
+     <header>
+        <div class="header" id="header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="logo_header">
+              <img class="img_logo" src="./img/logo3.png" alt="ENDE">
+            </div>
+            <nav>
+               <div class="nagivation_header" id="nagivation_header">
+                  <button onclick="toggleSidebar()" class="btn_icon_header">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                  </button>
+                  <a href="index.html">Home</a>
+                  <a href="#sobre">Sobre</a>
+                  <a href="#estado">Consumo</a>
+                  <a href="#pagamento">Pagamento</a>
+                  <a href="#comprovativo">Comprovativo</a>
+               </div> 
+           </nav>
+        </div>
+    </header>
+
+<!--Conteúdo-->
+    <article tabindex="0" onclick="closeSidebar()" class="content" id="content">
+
+        <section class="sobre" id="sobre">
+            <h1 class="principal">ENDE - Empresa Nacional de Distribuição de Electricidade</h1>
+           <div class="container">
+             <div class="card">
+                  <div class="content_card">
+                      <img src="./img/pub4.jpg" alt="ENDE"> 
+                  </div>
+             </div>
+
+             <div class="card">
+                <div class="content_card">
+                    <img src="./img/pub3.jpg" alt="ENDE">
+                </div>
+             </div>
+
+             <div class="card">
+                <div class="content_card">
+                     <img src="./img/pub2.jpg" alt="ENDE">
+                </div>
+             </div>
+           </div>
+
+           <p id="sobre_p">
+            A Empresa Nacional de Distribuição de Electricidade (ENDE-E.P.) resulta da fusão dos activos da extinta EDEL (Empresa de Distribuição de Electricidade)
+            e da Unidade de Negócios de Distribuição de extinta ENE (Empresa Nacional de Electricidade de Angola), através do Decreto Presidencial nº 305/14, publicado a 20 de Novembro de 2014, no âmbito do Programa de Transformação do Sector Eléctrico (PTSE),
+            desenvolvido desde 2012 sob a égide do Ministério da Energia e Águas.
+           </p>
+       </section>
+
+       <section class="pagamento" id="pagamento">
+           <div class="pago_container">
+               <div class="pago_form-img" >
+                   <img src="./img/logo3.png" alt="ENDE">
+               </div>
+               <div class="pago_form">
+                 <form action="#">
+                    <div class="pago_form-header">
+                        <div class="pago_title">
+                            <h1>Paga a sua conta de Electricidade</h1>
+                        </div>
+                    </div>
+
+                    <div class="pago_input-group">
+                        <div class="pago_input-box">
+                            <label for="codigo">Código do Cliente</label>
+                            <input id="codigo" type="number" name="codigo" required>
+                        </div>
+
+                        <div class="pago_input-box">
+                            <label for="nome">Nome de Cliente</label>
+                            <input id="nome" type="text" name="nome" required>
+                        </div>
+
+                        <div class="pago_input-box">
+                            <label for="tipo">Tipo de Pagamento</label>
+                            <input id="tipo" type="text" name="tipo" required>
+                        </div>
+
+                        <div class="pago_input-box">
+                            <label for="valor">Valor a pagar</label>
+                            <input id="valor" type="number" name="valor" required>
+                        </div>
+                    </div>
+
+                    <div class="pago_continue-button">
+                         <button><a href="#">Pagar</a></button>
+                    </div>
+                 </form>
+               </div>
+           </div>
+        </section>
+
+        <!-- 
+       <section class="estado" id="estado">
+          <h1 class="estado-info_titulo">Cálculo de Consumo </h1>
+          <div class="estado-container">
+          <div class="estado-info">
+              <img src="./img/logo1.png" alt="">
+          </div>
+          <form action="" class="estado-form">
+             <input type="date" placeholder="escolhe uma data" class="estado-form_input">
+             <button type="submit" class="estado-form_submit">Consultar</button>
+         </form>
+      </section>
+       
+      <section class="comprovativo" id="comprovativo">
+         <h1 class="principal">Comprovativo de Pagamento</h1>
+     </section> -->
+
+   </article>
+       
+    <footer class="footer">
+        <p class="footer_copyright">Desenvolvido por Maria Macongo como projecto final do Curso Unitel Cobe Web 11º</p>
+   </footer>
+
+    <script type="text/javascript" src="js.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+
+</body>
+</html>
