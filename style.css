@@ -260,9 +260,24 @@ color: var(--color-red3);
     text-align: center;
 }
 
+@keyframes animacao_btn{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
 .pago_continue-button button:hover{
     background-color: var(--color-white);
-    color: var(--color-red3);
+    color: var(--color-white);
+    animation-name: animacao_btn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
 }
 
 .pago_continue-button button a{
@@ -272,6 +287,8 @@ color: var(--color-red3);
     font: Papyrus;
     color: var(--color-red3);
 }
+
+
 
 @media screen and (max-width: 1330px){
     .pago_form-img{
